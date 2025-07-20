@@ -39,6 +39,15 @@ body {
     background-color: #ff6666;
 }
 
+.proton-orbit .proton {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
 .neutron {
     background-color: #6666ff;
 }
@@ -66,6 +75,20 @@ body {
     margin-left: -150px;
     margin-top: -150px;
     animation: rotate 15s linear infinite reverse;
+}
+
+.proton-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    transform-origin: center;
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    animation: rotate 20s linear infinite;
 }
 
 .electron {
