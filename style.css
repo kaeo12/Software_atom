@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.atom {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.nucleus {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proton, .neutron {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.proton {
+    background-color: #ff6666;
+}
+
+.neutron {
+    background-color: #6666ff;
+}
+
+.electron-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.electron-orbit:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    animation: rotate 10s linear infinite;
+}
+
+.electron-orbit:nth-child(3) {
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+    animation: rotate 15s linear infinite reverse;
+}
+
+.electron {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffff66;
+    border-radius: 50%;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
