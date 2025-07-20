@@ -118,11 +118,12 @@ body {
     margin-left: 5px;
 }
 
-.neutron > .label {
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    margin-left: 5px;
+.neutron {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #9999ff;
 }
 
 .electron > .label {
