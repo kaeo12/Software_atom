@@ -39,15 +39,6 @@ body {
     background-color: #ff6666;
 }
 
-.red-orbit .proton {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: -10px;
-    left: 50%;
-    margin-left: -10px;
-    background-color: red;
-}
 
 .neutron {
     background-color: #6666ff;
@@ -62,13 +53,6 @@ body {
     transform-origin: center;
 }
 
-.red-orbit {
-    border-color: red;
-}
-
-.red-orbit .electron {
-    background-color: red;
-}
 
 .electron-orbit:nth-child(2) {
     width: 200px;
