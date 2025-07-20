@@ -61,6 +61,14 @@ body {
     transform-origin: center;
 }
 
+.red-orbit {
+    border-color: red;
+}
+
+.red-orbit .electron {
+    background-color: red;
+}
+
 .electron-orbit:nth-child(2) {
     width: 200px;
     height: 200px;
