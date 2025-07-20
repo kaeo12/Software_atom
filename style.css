@@ -28,28 +28,26 @@ body {
     flex-wrap: wrap;
 }
 
-.proton, .neutron {
+.nucleus-shell {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proton {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin: 5px;
-}
-
-.proton {
     background-color: #ff6666;
-}
-
-.electron-orbit .electron {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: -10px;
-    left: 50%;
-    margin-left: -10px;
-}
-
-.neutron {
-    background-color: #6666ff;
 }
 
 .electron-orbit {
@@ -60,6 +58,7 @@ body {
     border-radius: 50%;
     transform-origin: center;
 }
+
 
 .electron-orbit:nth-child(2) {
     width: 200px;
@@ -119,11 +118,12 @@ body {
     margin-left: 5px;
 }
 
-.neutron > .label {
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    margin-left: 5px;
+.neutron {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #9999ff;
 }
 
 .electron > .label {
