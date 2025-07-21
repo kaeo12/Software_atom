@@ -106,9 +106,8 @@ body {
 
 .proton > .label {
     top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    margin-left: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .neutron {
@@ -117,6 +116,14 @@ body {
     border-radius: 50%;
     margin: 5px;
     background-color: #9999ff;
+}
+
+.proton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #ff9999;
 }
 
 .electron > .label {
